@@ -1,0 +1,152 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  background-color: #ad5c5c;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: #7c3333;
+  cursor: pointer;
+}
+
+.services {
+  padding: 30px 60px;
+}
+
+.services li {
+  padding: 10px;
+  color: #ad5c5c;
+}
+
+.services li a {
+  color: #ad5c5c;
+}
+
+.services li a:visited {
+  color: #b92828;
+}
+
+.services li a:hover {
+  cursor: pointer;
+  color: #7a3535;
+}
+
+.service {
+  padding: 30px 60px;
+  color: #ad5c5c;
+}
+
+.error {
+  margin: 20px;
+  border: 2px solid #ad5c5c;
+  border-radius: 10px;
+  background: #ad5c5c38;
+  padding: 25px;
+  width: 400px;
+  text-align: center;
+}
+
+.error button {
+  margin-left: 20px;
+}
+
+.loader {
+  margin: 30px 90px;
+  text-indent: -9999px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #ad5c5c;
+  background: linear-gradient(to right, #ad5c5c 10%, rgba(247, 64, 64, 0) 42%);
+  position: relative;
+  animation: load3 1.4s infinite linear;
+  transform: translateZ(0);
+}
+
+.loader:before {
+  width: 50%;
+  height: 50%;
+  background: #ad5c5c;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.loader:after {
+  background: #ffffff;
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@-webkit-keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load3 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
